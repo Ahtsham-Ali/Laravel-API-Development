@@ -75,7 +75,7 @@ class EagleController extends Controller
             ];
 //            Or you can return your view here with data as in else case
         } else {
-            print_r(compact(json_encode($data)));
+            return json_encode($data);
         }
     }
 
